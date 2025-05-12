@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艺术作品集</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .artwork {
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .artwork:hover {
+            transform: translateY(-5px);
+        }
+        .artwork img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .artwork-info {
+            padding: 15px;
+        }
+        .artwork-info h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .artwork-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #fff;
+            border-top: 1px solid #eee;
+        }
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>艺术作品集</h1>
+            <p>收集了来自世界各地的艺术精品</p>
+        </header>
+        
+        <div class="gallery">
+            <div class="artwork">
+                <a href="electronic-orbits.html">
+                    <img src="https://placehold.co/600x400/dark/white?text=Virtual+Archaeology+of+Electronic+Orbits" alt="Virtual Archaeology of Electronic Orbits">
+                    <div class="artwork-info">
+                        <h3>Virtual Archaeology of Electronic Orbits</h3>
+                        <p>艺术家：A Distributed Embodied Narrative Strategy</p>
+                        <p>年份：2024年</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="artwork">
+                <a href="https://www.louvre.fr/en/oeuvre-notices/mona-lisa-portrait-lisa-gherardini-wife-francesco-del-giocondo">
+                    <img src="https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg" alt="达芬奇《蒙娜丽莎》">
+                    <div class="artwork-info">
+                        <h3>蒙娜丽莎</h3>
+                        <p>艺术家：列奥纳多·达芬奇</p>
+                        <p>年份：约1503-1519年</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="artwork">
+                <a href="https://www.museoreinasofia.es/en/collection/artwork/guernica">
+                    <img src="https://cdn.britannica.com/78/145578-050-F331838D/Guernica-Pablo-Picasso-Spanish-Civil-War-bombing-1937.jpg" alt="毕加索《格尔尼卡》">
+                    <div class="artwork-info">
+                        <h3>格尔尼卡</h3>
+                        <p>艺术家：巴勃罗·毕加索</p>
+                        <p>年份：1937年</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="artwork">
+                <a href="https://www.edvardmunch.org/the-scream.jsp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1200px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg" alt="蒙克《呐喊》">
+                    <div class="artwork-info">
+                        <h3>呐喊</h3>
+                        <p>艺术家：爱德华·蒙克</p>
+                        <p>年份：1893年</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="artwork">
+                <a href="https://www.nga.gov/collection/art-object-page.46665.html">
+                    <img src="https://cdn.britannica.com/04/98004-050-C8E462E9/Water-Lilies-series-Claude-Monet-1906.jpg" alt="莫奈《睡莲》">
+                    <div class="artwork-info">
+                        <h3>睡莲</h3>
+                        <p>艺术家：克劳德·莫奈</p>
+                        <p>年份：1906年</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="artwork">
+                <a href="https://www.moma.org/collection/works/79766">
+                    <img src="https://cdn.britannica.com/47/235847-050-5BA322D8/The-Persistence-of-Memory-Salvador-Dali-1931.jpg" alt="达利《记忆的永恒》">
+                    <div class="artwork-info">
+                        <h3>记忆的永恒</h3>
+                        <p>艺术家：萨尔瓦多·达利</p>
+                        <p>年份：1931年</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 艺术作品集 - 仅供学习参考</p>
+        </footer>
+    </div>
+</body>
+</html> 
